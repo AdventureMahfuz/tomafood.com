@@ -15,9 +15,14 @@
  1. DEFAULT STYLE START
 ==============================================================================
 */
+@font-face {
+    font-family: Arial;
+    src: url('../fonts/Arial.ttf');
+}
 body {
-    font-family: Raleway, sans-serif;
-    font-size: 16px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Arial, Roboto, sans-serif;
+    font-size: 14px;
     line-height: 25px;
     background: #f1f1f1;
 }
@@ -35,6 +40,11 @@ a:focus{
     text-decoration: none;
     outline: none;
 }
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 /**
 ================================================================================
   1. DEFAULT STYLE END
@@ -49,6 +59,275 @@ a:focus{
  */
 /**
 ================================================================================
- 1. Top Bar style start
+header section style start
 ================================================================================
 */
+header.header-section {
+    background-repeat: repeat;
+    padding: 20px 0;
+}
+ul#nav {
+    text-align: right;
+}
+
+ul#nav li {
+    display: inline-block;
+    padding-top: 7px;
+}
+
+ul#nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    padding: 3px 22px;
+    transition: all .1s;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+ul#nav li a:hover {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #852901;
+    color: var(--secondary-color);
+    transition: all .1s;
+}
+/**
+================================================================================
+header section style end
+================================================================================
+*/
+
+
+/**
+================================================================================
+hero section style start
+================================================================================
+*/
+.hero-section{
+    background-position: center bottom;
+    height: 85vh;
+}
+.hero-content {
+    display: table;
+    height: 70vh;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.search-title h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.search-area {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 60px;
+}
+
+.search-input span {
+    position: absolute;
+    right: 0;
+    top: 28%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75%;
+}
+
+.search-image {
+}
+
+.search-input input {
+    background: transparent;
+    padding: 35px 0 35px 75px;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+}
+
+.search-input input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24%;
+}
+
+.search-btn button {
+    background: transparent;
+    padding: 35px 0;
+    border-radius: 15px;
+    border: none;
+}
+/**
+================================================================================
+hero section style end
+================================================================================
+*/
+
+
+/**
+================================================================================
+info section style start
+================================================================================
+*/
+.about-us h1, .testimonial h1{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 35px;
+    padding-bottom: 15px;
+}
+.testimonial h1{
+    font-size: 40px;
+    overflow: hidden;
+}
+.testimonial h1 span{
+    color: #0090ff;
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+}
+.testimonial p img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.testimonial span {
+    float: right;
+}
+.single-buy-step {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.single-buy-step img {
+    width: auto;
+    height: auto;
+}
+/**
+================================================================================
+info section style end
+================================================================================
+*/
+
+
+/**
+================================================================================
+takeaway list section style start
+================================================================================
+*/
+.takeaway-section-title {
+    background: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.takeaway-section-title h2 {
+    background: var(--secondary-color);
+    color: #fff;
+    display: inline-block;
+    margin: 8px 0 0 10px;
+    padding: 5px;
+    font-size: 19px;
+}
+.takeaways-list ul li a{
+    color: var(--secondary-color);
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/**
+================================================================================
+takeaway list section style end
+================================================================================
+*/
+
+
+/**
+================================================================================
+footer section style start
+================================================================================
+*/
+footer.footer-section {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.about-us-area h2 {
+    text-transform: capitalize;
+}
+
+.facebook-page-like h2 {
+    text-transform: capitalize;
+}
+
+.facebook-page-like {
+    text-align: center;
+    background: url('../images/footer_top_sepharator.png') no-repeat scroll left center !important;
+}
+
+.footer-bottom {
+    margin-top: 35px;
+    border-top: 1px solid #6b6b6b;
+}
+
+.footer-bottom p {
+    margin: 0;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+.footer-bottom a {
+    width: auto;
+    float: right;
+    display: inline-block;
+    padding: 15px 0;
+}
+/**
+================================================================================
+footer section style end
+================================================================================
+*/
+
+
+/**
+================================================================================
+style start
+================================================================================
+*/
+
+/**
+================================================================================
+style end
+================================================================================
+*/
+/**
+===================================================================================
+===============================  FRONT PAGE STYLE END  ==========================
+===================================================================================
+ */
