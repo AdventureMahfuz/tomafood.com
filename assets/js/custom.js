@@ -1,6 +1,33 @@
 (function($) {
 $(document).ready(function(){
     //hero slider
+    $('.testimonials').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsiveClass:true,
+        nav:false,
+        dots:true,
+        mouseDrag:true,
+        touchDrag: true,
+        responsive:{
+            0:{
+                items:1,
+                dots:true
+            },
+            600:{
+                items:1,
+                dots:true
+            },
+            1000:{
+                items:1,
+                dots:true,
+                loop:true
+            }
+        }
+    });
+    //hero slider
     /*$('#slider').owlCarousel({
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
