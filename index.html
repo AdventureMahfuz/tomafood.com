@@ -23,6 +23,11 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+    <style>
+        body{
+            background: var(--primary-color);
+        }
+    </style>
 </head>
 <body>
 <!--header section start-->
@@ -39,9 +44,9 @@
             <div class="col-sm-9">
                 <div class="navigation-menu">
                     <ul id="nav">
-                        <li><a href="index.html">home</a></li>
+                        <li class="active"><a href="index.html">home</a></li>
                         <li><a href="login.html">login</a></li>
-                        <li><a href="register.html">register</a></li>
+                        <li><a href="registration.html">register</a></li>
                         <li><a href="contact.html">contact us</a></li>
                     </ul>
                 </div>
@@ -342,27 +347,60 @@
 
 
 <!--footer section start-->
-<footer class="footer-section">
+<footer class="footer-section home-footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
-                <div class="about-us-area">
-                    <h2>about us</h2>
-                    <p>TomaFood is an effective and efficient online platform for takeaway and food delivery. With many
-                        popular and successful restaurants on our platform, ordering food delivery from your local
-                        takeaway has never been easier. From Inverness to London, TomaFood has partnered with the finest
-                        takeaway restaurants from across Britain so you can find and order a delicious takeaway in
-                        minutes.</p>
+            <div class="col-sm-4">
+                <div class="widget-1">
+                    <div class="footer-widget-title section-title">
+                        <h1>tomafood contacts</h1>
+                    </div>
+                    <div class="section-excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, inventore.</p>
+                    </div>
+                    <p><strong>Location: </strong>795 Folsom Ave, Suite 600 San Francisco, CA 94107</p>
+                    <p><strong>Phone: </strong>+8801739852881</p>
+                    <p><strong>Email: </strong>example@gmail.com</p>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="facebook-page-like">
-                    <h2>facebook</h2>
-                    <iframe name="f24d2560afae6a4" width="220px" height="175px"
-                            title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true"
-                            allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                            src="https://web.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df3034def5af801c%26domain%3Dtomafood.com%26origin%3Dhttps%253A%252F%252Ftomafood.com%252Ff3109704ac0bd88%26relation%3Dparent.parent&amp;container_width=90&amp;header=false&amp;height=175&amp;href=https%3A%2F%2Fwww.facebook.com%2FTomafood&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=220"
-                            style="border: none; visibility: visible; width: 220px; height: 137px;" class=""></iframe>
+                <div class="widget-2">
+                    <div class="footer-widget-title section-title">
+                        <h1>connected with us</h1>
+                    </div>
+                    <div class="section-excerpt">
+                        <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" name="subscribe-email" id="subscribe-email" class="form-control" required="required" placeholder="Enter your email...">
+                                <button type="submit" name="subscribe-btn" class="subscribe-btn">subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="widget-3">
+                    <div class="footer-widget-title section-title">
+                        <h1>like facebook page</h1>
+                    </div>
+                    <div class="section-excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, rem.</p>
+                    </div>
+                    <div class="facebook-page-iframe text-center">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTomafood%2F&tabs&width=340&height=181&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="181" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -382,15 +420,9 @@
 
 
 <!--back to top-->
-<!--<div class="back_to_top_area">
-    <div class="container">
-        <div class="row">
-            <div class="back_to_top">
-                <i class="fa fa-arrow-up"></i>
-            </div>
-        </div>
-    </div>
-</div>-->
+<div class="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+</div>
 <!--back to end-->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>

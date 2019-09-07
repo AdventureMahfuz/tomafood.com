@@ -21,7 +21,6 @@ body {
     line-height: 28px;
     letter-spacing: 0.3px;
     color: var(--body-text-color);
-    background: var(--primary-color);
 }
 
 img {
@@ -55,6 +54,23 @@ DEFAULT STYLE END
 COMMON STYLE START
 ================================================================================
 */
+.sticky_menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.sticky_menu:after{
+    position: absolute;
+    content: "";
+    background: url('../images/tri-promo-bottom-white.png') repeat-x scroll 0 0;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+    transform: rotateZ(180deg);
+}
 .section-title h1 {
     color: var(--primary-color);
     display: inline-block;
@@ -104,7 +120,21 @@ COMMON STYLE START
 .section-bg {
     background: var(--section-bg);
 }
-
+.back_to_top i.fa {
+    position: fixed;
+    right: 25px;
+    bottom: 75px;
+    width: 35px;
+    height: 35px;
+    background: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #999;
+    border-radius: 50%;
+}
 /**
 ================================================================================
 COMMON STYLE END
@@ -156,6 +186,12 @@ ul#nav li a:hover {
     color: var(--secondary-color);
     transition: all .1s;
 }
+ul#nav li.active a {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #852901;
+    color: var(--secondary-color);
+    transition: all .1s;
+}
 
 /**
 ================================================================================
@@ -184,10 +220,12 @@ hero section style start
 }
 
 .search-title h1 {
+    font-family: "Dancing Script", cursive;
     color: #fff;
-    font-size: 56px;
+    font-size: 80px;
     font-weight: 900;
     padding-bottom: 20px;
+    text-transform: capitalize;
 }
 
 .search-area {
@@ -430,21 +468,93 @@ footer section style start
 ================================================================================
 */
 footer.footer-section {
+    position: relative;
+    background: var(--primary-color);
     color: #fff;
 }
-
-.about-us-area h2 {
-    text-transform: capitalize;
+.footer-section:before{
+    position: absolute;
+    content: "";
+    background: url("../images/tri-promo-bottom-white.png") repeat-x scroll 0 0;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    top: 0;
+}
+.footer-section.home-footer:before{
+    position: initial;
+}
+.footer-widget-title.section-title h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 50px;
 }
 
-.facebook-page-like h2 {
-    text-transform: capitalize;
+.footer-widget-title.section-title h1:after {
+    border-bottom: 4px solid #ddd;
+}
+.widget-1 p strong {
+    letter-spacing: 1px;
 }
 
-.facebook-page-like {
+.widget-1 p {
+}
+
+.subscribe-form input {
+    border-radius: 0;
+    border: none;
+    padding: 25px 12px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    width: 70%;
+    float: left;
+}
+
+.subscribe-form {
+    overflow: hidden;
+}
+
+.subscribe-form button {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-weight: 700;
+    border: none;
+    background: #fff;
+    padding: 11px 15px;
+    border-left: 1px dotted var(--primary-color);
+}
+
+.social-links ul li {
+    display: inline-block;
+}
+
+.social-links {
+    margin-top: 30px;
     text-align: center;
-    background: url('../images/footer_top_sepharator.png') no-repeat scroll left center !important;
 }
+
+.social-links ul li a {
+    color: #fff;
+    background: var(--secondary-color);
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: all .5s;
+    transform: scale(1);
+}
+.social-links ul li a:hover{
+    transform: scale(1.2);
+    transition: all .5s
+}
+.facebook-page-iframe{
+    overflow: hidden;
+}
+
+
 
 .footer-bottom {
     margin-top: 35px;
@@ -469,20 +579,163 @@ footer.footer-section {
 footer section style end
 ================================================================================
 */
-
-/**
-================================================================================
-style start
-================================================================================
-*/
-
-/**
-================================================================================
-style end
-================================================================================
-*/
 /**
 ===================================================================================
 ===============================  FRONT PAGE STYLE END  ==========================
 ===================================================================================
  */
+
+
+
+
+/**
+===================================================================================
+===============================  LOGIN PAGE STYLE START  ==========================
+===================================================================================
+ */
+.login-form {
+    border: 1px solid #ddd;
+}
+
+.form-header-panel h4 {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 30px 0;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.form-footer-panel {
+    border-top: 1px solid #ddd;
+    padding: 15px 30px;
+    margin-top: 25px;
+}
+
+.register-link a {
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.submit-btn-area button {
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    padding: 5px 25px;
+}
+.submit-btn-area button:focus{
+    outline: none;
+}
+
+.login-form-area label {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.login-form-area a {
+    color: var(--primary-color);
+}
+
+/**
+===================================================================================
+===============================  LOGIN PAGE STYLE END  ==========================
+===================================================================================
+ */
+
+
+
+/*
+************************************************************************************
+                                CONTACT US PAGE START
+************************************************************************************
+*/
+.contact-information {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-10%, -50%);
+    width: 350px;
+}
+
+.contact-map-area {
+    position: relative;
+}
+
+.contact-information:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    content: "";
+    opacity: .6;
+}
+.single-contact-info {
+    margin: 25px;
+}
+.contact-info-icon {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+.contact-info-icon i {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.contact-info-content p {
+    color: #fff;
+}
+.contact-info-content p a {
+    color: #fff;
+}
+button#contact-btn {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #999;
+}
+
+.contact-form, .form-wrapper {
+    box-shadow:  0 0 10px var(--primary-color);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.contact-form input {
+    font-size: 18px;
+    padding: 22px 12px;
+}
+
+.contact-form textarea {
+    font-size: 18px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+/*
+************************************************************************************
+                                CONTACT US PAGE END
+************************************************************************************
+*/
