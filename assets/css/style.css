@@ -137,6 +137,7 @@ COMMON STYLE START
     display: none;
     box-shadow: 0 0 10px #999;
     border-radius: 50%;
+    z-index: 9999;
 }
 
 .form-control:focus {
@@ -175,7 +176,7 @@ COMMON STYLE END
 }
 
 .mobile-sticky-bar-common-style {
-    width: 20%;
+    width: 25%;
     float: left;
     padding: 10px 0;
     cursor: pointer;
@@ -341,14 +342,12 @@ ul#nav li a {
 ul#nav li a:hover {
     border-radius: 20px;
     box-shadow: 2px 2px 2px #852901;
-    color: var(--secondary-color);
     transition: all .1s;
 }
 
 ul#nav li.active a {
     border-radius: 20px;
     box-shadow: 2px 2px 2px #852901;
-    color: var(--secondary-color);
     transition: all .1s;
 }
 
