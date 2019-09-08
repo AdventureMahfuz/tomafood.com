@@ -1,11 +1,256 @@
 /*Medium Layout: 1280*/
-@media only screen and (min-width: 992px) and (max-width: 1200px){}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    /*front page start*/
+    .search-title h1 {
+        font-size: 65px;
+    }
+
+    .section-title h1 {
+        font-size: 50px;
+    }
+
+    .footer-widget-title.section-title h1 {
+        font-size: 28px;
+    }
+
+    .subscribe-form input {
+        width: 65%;
+    }
+    /*front page end*/
+}
 
 /*Tablet Layout: 768px*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*front page start*/
+    body {
+        font-size: 14px;
+    }
+
+    .search-title h1 {
+        font-size: 50px;
+    }
+
+    .search-input input {
+        padding: 25px 0 26px 50px;
+        font-size: 14px;
+    }
+
+    .search-input span {
+        top: 15%;
+    }
+
+    .search-btn button {
+        padding: 25px 0;
+    }
+
+    .section-title h1 {
+        font-size: 48px;
+    }
+
+    .single-buy-step img {
+        border-top-left-radius: 25px;
+    }
+
+    .border-bottom-left {
+        border-bottom-left-radius: 110px;
+    }
+
+    .border-top-right {
+        border-top-right-radius: 110px;
+    }
+
+    .footer-widget-title.section-title h1 {
+        font-size: 25px;
+    }
+
+    .section-excerpt p {
+        margin-bottom: 30px;
+    }
+
+    .subscribe-form input {
+        width: 60%;
+        font-size: 14px;
+        padding: 20px 12px;
+    }
+
+    .subscribe-form button {
+        width: 40%;
+        padding: 6px;
+    }
+
+    .social-links ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 3px;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+    /*front page end*/
+
+
+    /*login-registration page start*/
+    .login-form-area .form-control {
+        margin-bottom: 6px;
+    }
+    /*login-registration page end*/
+}
 
 /*Mobile Layout: 320px*/
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    /*mobile view menubar start*/
+    .sticky-area-mobile-view {
+        display: block;
+    }
+    /*mobile view menubar end*/
+
+
+    /*front page start*/
+    .navigation-menu {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .search-title h1 {
+        font-size: 50px;
+        padding-bottom: 0;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .search-input input {
+        font-size: 16px;
+        padding: 25px 0 25px 50px;
+    }
+
+    .search-input span {
+        top: 13%;
+    }
+
+    .search-btn button {
+        padding: 23px 0;
+    }
+
+    .hero-section {
+        height: 65vh;
+    }
+
+    .hero-content {
+        height: 45vh;
+    }
+
+    .section-title h1 {
+        font-size: 35px;
+    }
+
+    .about-us-section {
+        padding-bottom: initial;
+    }
+
+    .border-top-right {
+        border-top-right-radius: 100px;
+    }
+
+    .border-bottom-left {
+        border-bottom-left-radius: 100px;
+    }
+
+    .section-padding {
+        margin-bottom: 30px;
+    }
+
+    .single-buy-step {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .single-buy-step img {
+        width: auto;
+    }
+
+    .takeaways-list ul li {
+    }
+
+    .takeaways-list ul li a {
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    .takeaways-list ul li:nth-child(2n-1) {background: #ddd;border-radius: 5px;}
+
+    .takeaways-list ul li {
+        padding: 7px 0;
+    }
+
+    footer.footer-section {
+        text-align: center;
+    }
+    .subscribe-form button {
+        width: 30%;
+    }
+    footer.footer-section {
+        margin-bottom: 65px;
+    }
+    /*front page end*/
+
+
+    /*login-registration page start*/
+    .login-form-area .form-control {
+        margin-bottom: 6px;
+    }
+    /*login-registration page end*/
+
+    /*contact us page start*/
+    .contact-form, .form-wrapper{
+        box-shadow: initial;
+        padding: initial;
+    }
+    .contact-information {
+        display: block;
+        width: 100%;
+        position: initial;
+        transform: initial;
+        background: var(--primary-color);
+        padding: 25px 0;
+        margin-top: 45px;
+    }
+
+    .contact-information:after {
+        position: initial;
+    }
+    /*contact us page end*/
+}
 
 /*Wide Mobile Layout: 480px*/
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*front page start*/
+    .hero-section{
+        height: 80vh;
+    }
+    .search-wrapper {
+        text-align: center;
+    }
+    .search-area {
+        float: initial;
+        margin-top: 30px;
+    }
+    .search-input input {
+        padding: 36px 0 36px 78px;
+    }
+    .search-input span {
+        top: 25%;
+    }
+    .search-btn {
+        height: 100%;
+    }
+    /*front page end*/
+}

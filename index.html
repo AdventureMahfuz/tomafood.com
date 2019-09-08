@@ -14,22 +14,60 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <!--<link rel="stylesheet" href="assets/css/slicknav.min.css">-->
-    <!--<link rel="stylesheet" href="assets/css/animate.min.css">-->
-    <!--<link rel="stylesheet" href="assets/css/magnific-popup.css">-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--<link rel="stylesheet" href="assets/css/responsive.css">-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+
     <style>
-        body{
+        body {
             background: var(--primary-color);
         }
     </style>
+
 </head>
 <body>
+<!--mobile view start-->
+<div class="mobile_view">
+    <div class="mobile-menu-area">
+        <ul class="mobile-menu">
+            <li><i class="fa fa-times" id="close"></i></li>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="login.html">login</a></li>
+            <li><a class="nav-link" href="registration.html">registration</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="sticky-area-mobile-view">
+        <a href="index.html">
+            <div class="mobile-home-btn text-center mobile-sticky-bar-common-style">
+                <i class="fa fa-home"></i>
+                <p>home</p>
+            </div>
+        </a>
+        <div class="mobile-user-btn text-center mobile-sticky-bar-common-style">
+            <i class="fa fa-user"></i>
+            <p>user</p>
+        </div>
+        <div class="mobile-call-btn text-center mobile-sticky-bar-common-style">
+            <i class="fa fa-phone"></i>
+            <p>call</p>
+        </div>
+        <div class="mobile-cart-btn text-center mobile-sticky-bar-common-style">
+            <i class="fa fa-shopping-cart"></i>
+            <p>order</p>
+        </div>
+        <div class="mobile-menu-btn text-center mobile-sticky-bar-common-style">
+            <i class="fa fa-bars"></i>
+            <p>more</p>
+        </div>
+    </div>
+</div>
+<!--mobile view end-->
+
+
 <!--header section start-->
 <header class="header-section" style="background-image: url('assets/images/top_bg.png');">
     <div class="container">
@@ -73,21 +111,23 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-8">
-                                <div class="search-area">
-                                    <form action="#">
-                                        <div class="search-image">
-                                            <img src="assets/images/search.png" alt="">
-                                        </div>
-                                        <div class="search-input">
-                                            <input type="text" id="search-box" name="search-box"
-                                                   class="form-control" placeholder="enter your postcode">
-                                            <span><img src="assets/images/geolocation.png" alt=""></span>
-                                        </div>
-                                        <div class="search-btn">
-                                            <button type="submit" id="search-btn" name="search-btn"
-                                                    class="form-control"></button>
-                                        </div>
-                                    </form>
+                                <div class="search-wrapper">
+                                    <div class="search-area">
+                                        <form action="#">
+                                            <div class="search-image">
+                                                <img src="assets/images/search.png" alt="">
+                                            </div>
+                                            <div class="search-input">
+                                                <input type="text" id="search-box" name="search-box"
+                                                       class="form-control" placeholder="enter your postcode">
+                                                <span><img src="assets/images/geolocation.png" alt=""></span>
+                                            </div>
+                                            <div class="search-btn">
+                                                <button type="submit" id="search-btn" name="search-btn"
+                                                        class="form-control"></button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -109,12 +149,16 @@
 <section class="about-us-section section-padding section-bg">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="section-title text-center">
                     <h1>our story</h1>
                 </div>
                 <div class="section-excerpt text-center">
-                    <p>TomaFood is an effective and efficient online platform for takeaway and food delivery. With many popular and successful restaurants on our platform, ordering food delivery from your local takeaway has never been easier. From Inverness to London, TomaFood has partnered with the finest takeaway restaurants from across Britain so you can find and order a delicious takeaway in minutes.</p>
+                    <p>TomaFood is an effective and efficient online platform for takeaway and food delivery. With many
+                        popular and successful restaurants on our platform, ordering food delivery from your local
+                        takeaway has never been easier. From Inverness to London, TomaFood has partnered with the finest
+                        takeaway restaurants from across Britain so you can find and order a delicious takeaway in
+                        minutes.</p>
                 </div>
             </div>
         </div>
@@ -127,7 +171,7 @@
 <section class="info-section section-padding section-bg border-bottom-left border-top-right">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="section-title text-center">
                     <h1>food order process</h1>
                 </div>
@@ -139,14 +183,6 @@
                         from your local takeaway has never been easier.</p>
                 </div>
             </div>
-            <!--<div class="col-sm-4">
-                <div class="testimonial">
-                    <h1>What customers <br> <span>ARE SAYING!</span></h1>
-                    <p><img src="assets/images/testimonial_top.png" alt="">As usual a great meal and prompt delivery. First time used the Tomafood ordering system and thrilled with the experience.
-                        Thanks.</p>
-                    <span>M Smith</span>
-                </div>
-            </div>-->
         </div>
         <div class="buy-steps">
             <div class="row">
@@ -181,12 +217,14 @@
 <section class="takeaway-list-section section-padding section-bg border-top-right border-bottom-left">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="section-title text-center">
                     <h1>Restaurants / takeaways</h1>
                 </div>
                 <div class="section-excerpt text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate, deserunt dolorem eos ipsum mollitia nobis recusandae vel veritatis voluptatibus. Animi exercitationem hic laudantium perferendis perspiciatis sunt unde ut, voluptates!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate, deserunt dolorem eos
+                        ipsum mollitia nobis recusandae vel veritatis voluptatibus. Animi exercitationem hic laudantium
+                        perferendis perspiciatis sunt unde ut, voluptates!</p>
                 </div>
             </div>
         </div>
@@ -194,119 +232,119 @@
             <div class="col-sm-3">
                 <div class="takeaways-list">
                     <ul>
-                        <li><a href="#">Aaminah's</a></li>
-                        <li><a href="#">Amrans</a></li>
-                        <li><a href="#">Cafe India</a></li>
-                        <li><a href="#">Chester Tandoori</a></li>
-                        <li><a href="#">Clay Oven</a></li>
-                        <li><a href="#">Dilshad</a></li>
-                        <li><a href="#">Enfes</a></li>
-                        <li><a href="#">Goa</a></li>
-                        <li><a href="#">Hylton Pizza</a></li>
-                        <li><a href="#">Julia &amp; Sofia's</a></li>
-                        <li><a href="#">Maida Table Spread</a></li>
-                        <li><a href="#">Moti Jheel Restaurant</a></li>
-                        <li><a href="#">Mya's</a></li>
-                        <li><a href="#">Nishas Tandoori</a></li>
-                        <li><a href="#">Pizza Castle</a></li>
-                        <li><a href="#">Raaz Tandoori-OLD</a></li>
-                        <li><a href="#">Rowshuni</a></li>
-                        <li><a href="#">Sams</a></li>
-                        <li><a href="#">Shagorika</a></li>
-                        <li><a href="#">Shukran</a></li>
-                        <li><a href="#">Spice Palace</a></li>
-                        <li><a href="#">The Diner</a></li>
-                        <li><a href="#">The Workshop</a></li>
-                        <li><a href="#">Wee Delhi</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Aaminah's</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Amrans</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Cafe India</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Chester Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Clay Oven</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Dilshad</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Enfes</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Goa</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Hylton Pizza</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Julia &amp; Sofia's</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Maida Table Spread</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Moti Jheel Restaurant</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Mya's</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Nishas Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Pizza Castle</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Raaz Tandoori-OLD</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Rowshuni</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Sams</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Shagorika</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Shukran</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Spice Palace</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Diner</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Workshop</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Wee Delhi</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="takeaways-list">
                     <ul>
-                        <li><a href="#">Al Tiffin</a></li>
-                        <li><a href="#">Bengal Curry Center</a></li>
-                        <li><a href="#">Cafe Spice</a></li>
-                        <li><a href="#">CHOW MEIN</a></li>
-                        <li><a href="#">Coxhoe Tandoori</a></li>
-                        <li><a href="#">Dine @ Home</a></li>
-                        <li><a href="#">Fawdon Tandoori</a></li>
-                        <li><a href="#">Grange Town</a></li>
-                        <li><a href="#">Indian Spice</a></li>
-                        <li><a href="#">Kismet</a></li>
-                        <li><a href="#">Masak</a></li>
-                        <li><a href="#">MOTIJHEEL</a></li>
-                        <li><a href="#">Nawaab</a></li>
-                        <li><a href="#">Passage to India</a></li>
-                        <li><a href="#">Ponteland Tandoori</a></li>
-                        <li><a href="#">Ravello</a></li>
-                        <li><a href="#">Ruchi</a></li>
-                        <li><a href="#">Santinni</a></li>
-                        <li><a href="#">Shikara</a></li>
-                        <li><a href="#">Sid's Spice</a></li>
-                        <li><a href="#">SuperPizza</a></li>
-                        <li><a href="#">The Little Chip</a></li>
-                        <li><a href="#">Tiffinbox</a></li>
-                        <li><a href="#">Zahir Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Al Tiffin</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Bengal Curry Center</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Cafe Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> CHOW MEIN</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Coxhoe Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Dine @ Home</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Fawdon Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Grange Town</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Indian Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Kismet</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Masak</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> MOTIJHEEL</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Nawaab</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Passage to India</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Ponteland Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Ravello</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Ruchi</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Santinni</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Shikara</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Sid's Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> SuperPizza</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Little Chip</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Tiffinbox</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Zahir Tandoori</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="takeaways-list">
                     <ul>
-                        <li><a href="#">Aleeza's</a></li>
-                        <li><a href="#">Bengal Spice Sunderland</a></li>
-                        <li><a href="#">Cafe Spice</a></li>
-                        <li><a href="#">CHUTNEY</a></li>
-                        <li><a href="#">Curry Hoose</a></li>
-                        <li><a href="#">Eastend Diner</a></li>
-                        <li><a href="#">Foresthall Tandoori</a></li>
-                        <li><a href="#">Haveli</a></li>
-                        <li><a href="#">Jashn</a></li>
-                        <li><a href="#">La Vera Pizza</a></li>
-                        <li><a href="#">Masala King</a></li>
-                        <li><a href="#">Motiraj</a></li>
-                        <li><a href="#">Nazruls Sonargow</a></li>
-                        <li><a href="#">Pietro</a></li>
-                        <li><a href="#">Prince Of Spice</a></li>
-                        <li><a href="#">Rio Pizza</a></li>
-                        <li><a href="#">Rumana</a></li>
-                        <li><a href="#">Santino's</a></li>
-                        <li><a href="#">Shildon Tandoori</a></li>
-                        <li><a href="#">Spice 1</a></li>
-                        <li><a href="#">The Capital</a></li>
-                        <li><a href="#">The Roker Tandoori</a></li>
-                        <li><a href="#">Valley Junction 397</a></li>
-                        <li><a href="#">Zara Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Aleeza's</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Bengal Spice Sunderland</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Cafe Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> CHUTNEY</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Curry Hoose</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Eastend Diner</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Foresthall Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Haveli</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Jashn</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> La Vera Pizza</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Masala King</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Motiraj</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Nazruls Sonargow</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Pietro</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Prince Of Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Rio Pizza</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Rumana</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Santino's</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Shildon Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Spice 1</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Capital</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Roker Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Valley Junction 397</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Zara Tandoori</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="takeaways-list">
                     <ul>
-                        <li><a href="#">Almandy</a></li>
-                        <li><a href="#">Bhaji</a></li>
-                        <li><a href="#">Cardamon Spice </a></li>
-                        <li><a href="#">Cinnamon Club</a></li>
-                        <li><a href="#">Delaval Tandoori</a></li>
-                        <li><a href="#">Ellachi</a></li>
-                        <li><a href="#">Fulwell Tandoori Chef</a></li>
-                        <li><a href="#">Hotway</a></li>
-                        <li><a href="#">Jubilee</a></li>
-                        <li><a href="#">Maharani</a></li>
-                        <li><a href="#">Morpeth Spice</a></li>
-                        <li><a href="#">Mumbai Silk</a></li>
-                        <li><a href="#">New New Bengal</a></li>
-                        <li><a href="#">Pizza Bella</a></li>
-                        <li><a href="#">Raaz Tandoori</a></li>
-                        <li><a href="#">Roma Delivery</a></li>
-                        <li><a href="#">Saffron Sund</a></li>
-                        <li><a href="#">Seghill Tandoori</a></li>
-                        <li><a href="#">Shotton Tandoori</a></li>
-                        <li><a href="#">SPICE EMPIRE</a></li>
-                        <li><a href="#">The Diner</a></li>
-                        <li><a href="#">The Torrens</a></li>
-                        <li><a href="#">Village Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Almandy</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Bhaji</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Cardamon Spice </a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Cinnamon Club</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Delaval Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Ellachi</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Fulwell Tandoori Chef</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Hotway</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Jubilee</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Maharani</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Morpeth Spice</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Mumbai Silk</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> New New Bengal</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Pizza Bella</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Raaz Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Roma Delivery</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Saffron Sund</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Seghill Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Shotton Tandoori</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> SPICE EMPIRE</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Diner</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> The Torrens</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> Village Spice</a></li>
                     </ul>
                 </div>
             </div>
@@ -321,22 +359,28 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="section-title text-center">
                     <h1>our clients say</h1>
                 </div>
                 <div class="testimonials owl-carousel">
                     <div class="single-testimonial section-excerpt text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores deleniti, dignissimos dolorum exercitationem in, laudantium modi molestias nesciunt nisi nobis non pariatur reiciendis sapiente, voluptas voluptatibus? Facilis, voluptate!</p>
-                    <span>john doe</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores
+                            deleniti, dignissimos dolorum exercitationem in, laudantium modi molestias nesciunt nisi
+                            nobis non pariatur reiciendis sapiente, voluptas voluptatibus? Facilis, voluptate!</p>
+                        <span>john doe</span>
                     </div>
                     <div class="single-testimonial section-excerpt text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores deleniti, dignissimos dolorum exercitationem in, laudantium modi molestias nesciunt nisi nobis non pariatur reiciendis sapiente, voluptas voluptatibus? Facilis, voluptate!</p>
-                    <span>Steven Spielberg</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores
+                            deleniti, dignissimos dolorum exercitationem in, laudantium modi molestias nesciunt nisi
+                            nobis non pariatur reiciendis sapiente, voluptas voluptatibus? Facilis, voluptate!</p>
+                        <span>Steven Spielberg</span>
                     </div>
                     <div class="single-testimonial section-excerpt text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores deleniti, dignissimos dolorum exercitationem in, laudantium modi molestias nesciunt nisi nobis non pariatur reiciendis sapiente, voluptas voluptatibus? Facilis, voluptate!</p>
-                    <span>William Trevor</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores
+                            deleniti, dignissimos dolorum exercitationem in, laudantium modi molestias nesciunt nisi
+                            nobis non pariatur reiciendis sapiente, voluptas voluptatibus? Facilis, voluptate!</p>
+                        <span>William Trevor</span>
                     </div>
                 </div>
             </div>
@@ -348,69 +392,78 @@
 
 <!--footer section start-->
 <footer class="footer-section home-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="widget-1">
-                    <div class="footer-widget-title section-title">
-                        <h1>tomafood contacts</h1>
-                    </div>
-                    <div class="section-excerpt">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, inventore.</p>
-                    </div>
-                    <p><strong>Location: </strong>795 Folsom Ave, Suite 600 San Francisco, CA 94107</p>
-                    <p><strong>Phone: </strong>+8801739852881</p>
-                    <p><strong>Email: </strong>example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="widget-2">
-                    <div class="footer-widget-title section-title">
-                        <h1>connected with us</h1>
-                    </div>
-                    <div class="section-excerpt">
-                        <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
-                    </div>
-                    <div class="subscribe-form">
-                        <form action="#">
-                            <div class="form-group">
-                                <input type="email" name="subscribe-email" id="subscribe-email" class="form-control" required="required" placeholder="Enter your email...">
-                                <button type="submit" name="subscribe-btn" class="subscribe-btn">subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="social-links">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="widget-1">
+                        <div class="footer-widget-title section-title">
+                            <h1>tomafood contacts</h1>
+                        </div>
+                        <div class="section-excerpt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, inventore.</p>
+                        </div>
+                        <p><strong>Location: </strong>795 Folsom Ave, Suite 600 San Francisco, CA 94107</p>
+                        <p><strong>Phone: </strong>+8801739852881</p>
+                        <p><strong>Email: </strong>example@gmail.com</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="widget-3">
-                    <div class="footer-widget-title section-title">
-                        <h1>like facebook page</h1>
+                <div class="col-sm-4">
+                    <div class="widget-2">
+                        <div class="footer-widget-title section-title">
+                            <h1>connected with us</h1>
+                        </div>
+                        <div class="section-excerpt">
+                            <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="email" name="subscribe-email" id="subscribe-email" class="form-control"
+                                           required="required" placeholder="Enter your email...">
+                                    <button type="submit" name="subscribe-btn" class="subscribe-btn">subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="section-excerpt">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, rem.</p>
-                    </div>
-                    <div class="facebook-page-iframe text-center">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTomafood%2F&tabs&width=340&height=181&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="181" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col-sm-4">
+                    <div class="widget-3">
+                        <div class="footer-widget-title section-title">
+                            <h1>like facebook page</h1>
+                        </div>
+                        <div class="section-excerpt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, rem.</p>
+                        </div>
+                        <div class="facebook-page-iframe text-center">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTomafood%2F&tabs&width=340&height=181&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                    width="340" height="181" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="footer-bottom">
-                    <p>Copyright &copy; 2019 tomafood.com</p>
-                    <a href="#">
-                        <img src="assets/images/payment.png" alt="">
-                    </a>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-bottom">
+                        <p>Copyright &copy; 2019 tomafood.com</p>
+                        <a href="#">
+                            <img src="assets/images/payment.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,9 +480,6 @@
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
-<!--<script src="assets/js/jquery.slicknav.min.js"></script>-->
-<!--<script src="assets/js/wow.min.js"></script>-->
-<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

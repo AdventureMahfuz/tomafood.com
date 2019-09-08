@@ -4,7 +4,7 @@
 ==============================================================================
 */
 :root {
-    --primary-color: #DF0024;
+    --primary-color: #CE0202;
     --secondary-color: #1c1c1c;
     --body-text-color: #4a4d4f;
     --section-bg: #fff;
@@ -61,7 +61,8 @@ COMMON STYLE START
     left: 0;
     top: 0;
 }
-.sticky_menu:after{
+
+.sticky_menu:after {
     position: absolute;
     content: "";
     background: url('../images/tri-promo-bottom-white.png') repeat-x scroll 0 0;
@@ -71,6 +72,7 @@ COMMON STYLE START
     bottom: 0;
     transform: rotateZ(180deg);
 }
+
 .section-title h1 {
     color: var(--primary-color);
     display: inline-block;
@@ -120,6 +122,7 @@ COMMON STYLE START
 .section-bg {
     background: var(--section-bg);
 }
+
 .back_to_top i.fa {
     position: fixed;
     right: 25px;
@@ -135,10 +138,165 @@ COMMON STYLE START
     box-shadow: 0 0 10px #999;
     border-radius: 50%;
 }
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
 /**
 ================================================================================
 COMMON STYLE END
 ================================================================================
+*/
+/*mobile view menubar start*/
+
+.sticky-area-mobile-view {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--primary-color);
+    width: 100%;
+    height: 65px;
+}
+
+.sticky-area-mobile-view:before {
+    position: absolute;
+    content: "";
+    background: url("../images/tri-promo-bottom-white.png") repeat-x scroll 0 0;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    top: 0;
+}
+
+.mobile-menu-btn i.fa {
+    font-size: 27px;
+}
+
+.mobile-sticky-bar-common-style {
+    width: 20%;
+    float: left;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.mobile-sticky-bar-common-style i.fa {
+    color: #fff;
+    font-size: 22px;
+}
+
+.mobile-sticky-bar-common-style p {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    margin-top: -3px;
+}
+
+.sticky-area-mobile-view {
+    display: none;
+}
+
+ul.mobile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--primary-color);
+    position: fixed;
+    bottom: 48px;
+    right: -100%;
+    z-index: 9999;
+    width: 100%;
+    opacity: 0;
+    overflow: scroll;
+    height: 49%;
+    transition: all .5s;
+}
+
+ul.mobile-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    transition: all .5s;
+    display: block;
+    padding: 10px 20px;
+}
+
+#close {
+    position: absolute;
+    right: 9px;
+    top: 3px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.order-page-cart {
+    background: #fec752;
+    width: 36%;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.amount {
+    display: inline-block;
+}
+
+.amount span {
+    color: #000;
+    display: block;
+}
+
+.item-count {
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.item-count i.fa {
+    font-size: 35px;
+    color: #fff;
+}
+
+.item-count span {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -25%);
+    font-weight: 700;
+    color: #000;
+}
+
+/*mobile view menubar end*/
+/*
+=============================================================================
+scroll bar style for chrome
+==============================================================================
+*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+/*
+=============================================================================
+scroll bar style for chrome
+==============================================================================
 */
 
 /**
@@ -186,6 +344,7 @@ ul#nav li a:hover {
     color: var(--secondary-color);
     transition: all .1s;
 }
+
 ul#nav li.active a {
     border-radius: 20px;
     box-shadow: 2px 2px 2px #852901;
@@ -206,10 +365,14 @@ hero section style start
 */
 .hero-section {
     background-position: center bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     height: 90vh;
 }
 
 .hero-content {
+    width: 100%;
     display: table;
     height: 75vh;
 }
@@ -356,10 +519,24 @@ takeaway list section style start
     line-height: 35px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all .5s;
 }
 
 .takeaways-list ul li a:hover {
     color: var(--primary-color);
+    margin-left: 5px;
+    transition: all .5s;
+}
+
+.takeaways-list ul li a:hover i {
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+.takeaways-list ul li a i {
+    color: var(--primary-color);
+    font-size: 16px;
+    transition: all .5s;
 }
 
 /**
@@ -368,20 +545,20 @@ takeaway list section style end
 ================================================================================
 */
 
-
 /**
 ================================================================================
 testimonial section style start
 ================================================================================
 */
-.testimonial-section{
+.testimonial-section {
     padding: 90px 0;
     position: relative;
     background: url('../images/testimonial-bg.jpeg');
     background-size: cover;
     background-position: center center;
 }
-.testimonial-section:before{
+
+.testimonial-section:before {
     position: absolute;
     content: "";
     background: url("../images/tri-promo-bottom-white.png") repeat-x scroll 0 0;
@@ -391,7 +568,8 @@ testimonial section style start
     top: 0;
     z-index: 2;
 }
-.testimonial-section:after{
+
+.testimonial-section:after {
     position: absolute;
     content: "";
     background: url("../images/tri-promo-bottom-white.png") repeat-x scroll 0 0;
@@ -402,7 +580,8 @@ testimonial section style start
     z-index: 2;
     transform: rotateZ(180deg);
 }
-.overlay{
+
+.overlay {
     position: absolute;
     background: #000 url('../images/pattarn.png');
     width: 100%;
@@ -411,15 +590,18 @@ testimonial section style start
     top: 0;
     opacity: 0.8;
 }
-.single-testimonial{
+
+.single-testimonial {
     overflow: hidden;
 }
-.single-testimonial p{
+
+.single-testimonial p {
     color: #ffffff;
     line-height: 30px;
     letter-spacing: .5px;
 }
-.single-testimonial span{
+
+.single-testimonial span {
     position: relative;
     float: right;
     text-align: right;
@@ -430,7 +612,8 @@ testimonial section style start
     padding-right: 50px;
     display: inline-block;
 }
-.single-testimonial span:before{
+
+.single-testimonial span:before {
     position: absolute;
     content: "";
     border-top: 2px solid var(--primary-color);
@@ -439,6 +622,7 @@ testimonial section style start
     left: -60px;
     top: 48%;
 }
+
 .testimonials .owl-dots .owl-dot {
     width: 15px;
     height: 15px;
@@ -455,12 +639,12 @@ testimonial section style start
 .testimonials .owl-dots .owl-dot.active {
     background: var(--primary-color);
 }
+
 /**
 ================================================================================
 testimonial section style end
 ================================================================================
 */
-
 
 /**
 ================================================================================
@@ -469,10 +653,29 @@ footer section style start
 */
 footer.footer-section {
     position: relative;
-    background: var(--primary-color);
     color: #fff;
 }
-.footer-section:before{
+
+.footer-top {
+    position: relative;
+    padding-bottom: 30px;
+    background: #2D0007;
+    z-index: 1;
+}
+
+.footer-top:after {
+    position: absolute;
+    content: '';
+    background: url('../images/pattarn.png');
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.footer-section:before {
     position: absolute;
     content: "";
     background: url("../images/tri-promo-bottom-white.png") repeat-x scroll 0 0;
@@ -481,9 +684,11 @@ footer.footer-section {
     left: 0;
     top: 0;
 }
-.footer-section.home-footer:before{
+
+.footer-section.home-footer:before {
     position: initial;
 }
+
 .footer-widget-title.section-title h1 {
     color: #fff;
     font-size: 40px;
@@ -493,11 +698,9 @@ footer.footer-section {
 .footer-widget-title.section-title h1:after {
     border-bottom: 4px solid #ddd;
 }
+
 .widget-1 p strong {
     letter-spacing: 1px;
-}
-
-.widget-1 p {
 }
 
 .subscribe-form input {
@@ -546,19 +749,29 @@ footer.footer-section {
     transition: all .5s;
     transform: scale(1);
 }
-.social-links ul li a:hover{
+
+.social-links ul li a:hover {
     transform: scale(1.2);
     transition: all .5s
 }
-.facebook-page-iframe{
+
+.facebook-page-iframe {
     overflow: hidden;
 }
 
+.footer-bottom-area {
+    position: relative;
+    background: var(--primary-color);
+}
 
-
-.footer-bottom {
-    margin-top: 35px;
-    border-top: 1px solid #6b6b6b;
+.footer-bottom-area:after {
+    position: absolute;
+    content: "";
+    background: url("../images/tri-promo-bottom-white.png") repeat-x scroll 0 0;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    top: 0;
 }
 
 .footer-bottom p {
@@ -584,9 +797,6 @@ footer section style end
 ===============================  FRONT PAGE STYLE END  ==========================
 ===================================================================================
  */
-
-
-
 
 /**
 ===================================================================================
@@ -625,7 +835,8 @@ footer section style end
     border: none;
     padding: 5px 25px;
 }
-.submit-btn-area button:focus{
+
+.submit-btn-area button:focus {
     outline: none;
 }
 
@@ -645,8 +856,6 @@ footer section style end
 ===============================  LOGIN PAGE STYLE END  ==========================
 ===================================================================================
  */
-
-
 
 /*
 ************************************************************************************
@@ -678,14 +887,17 @@ footer section style end
     content: "";
     opacity: .6;
 }
+
 .single-contact-info {
     margin: 25px;
 }
+
 .contact-info-icon {
     display: inline-block;
     float: left;
     overflow: hidden;
 }
+
 .contact-info-icon i {
     color: #fff;
     width: 50px;
@@ -700,9 +912,11 @@ footer section style end
 .contact-info-content p {
     color: #fff;
 }
+
 .contact-info-content p a {
     color: #fff;
 }
+
 button#contact-btn {
     border: none;
     background: var(--primary-color);
@@ -716,7 +930,7 @@ button#contact-btn {
 }
 
 .contact-form, .form-wrapper {
-    box-shadow:  0 0 10px var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
     padding: 25px;
     border-radius: 5px;
 }
@@ -734,6 +948,7 @@ button#contact-btn {
     box-shadow: none;
     border-color: var(--primary-color);
 }
+
 /*
 ************************************************************************************
                                 CONTACT US PAGE END
