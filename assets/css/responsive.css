@@ -117,10 +117,12 @@
     }
 
     .search-title h1 {
-        font-size: 50px;
+        font-size: 35px;
         padding-bottom: 0;
     }
-
+    .search-area {
+        margin-top: 15px;
+    }
     .burger {
         display: none;
     }
@@ -194,11 +196,31 @@
     footer.footer-section {
         text-align: center;
     }
+    .footer-widget-title.section-title h1{
+        font-size: 30px;
+    }
     .subscribe-form button {
         width: 30%;
     }
+
     footer.footer-section {
         margin-bottom: 65px;
+    }
+    .footer-bottom p {
+        display: block;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .footer-bottom a {
+        display: block;
+        float: initial;
+        text-align: center;
+    }
+
+    .footer-bottom a img {
+        width: auto;
     }
     /*front page end*/
 
