@@ -1,5 +1,5 @@
 /*Medium Layout: 1280*/
-@media only screen and (min-width: 992px) and (max-width: 1200px){
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     /*front page start*/
     .search-title h1 {
         font-size: 65px;
@@ -16,7 +16,14 @@
     .subscribe-form input {
         width: 65%;
     }
+
     /*front page end*/
+    /*search page start*/
+    .t-l-area {
+        margin-right: 32px;
+    }
+
+    /*search page end*/
 }
 
 /*Tablet Layout: 768px*/
@@ -88,14 +95,48 @@
     .social-links {
         margin-top: 15px;
     }
+
     /*front page end*/
-
-
     /*login-registration page start*/
     .login-form-area .form-control {
         margin-bottom: 6px;
     }
+
     /*login-registration page end*/
+    /*search page start*/
+    .single-popular-item {
+        width: 23%;
+    }
+
+    .t-l-area {
+        margin-right: initial;
+        float: initial;
+        display: block;
+    }
+
+    .sr-thumbnail {
+        width: auto;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .sr-logo {
+        right: 0;
+        top: 0;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, .1);
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+    }
+
+    .section-title.search-result h1 {
+        font-size: 25px;
+    }
+
+    .pre-order h2 {
+        font-size: 25px;
+    }
+
+    /*search page end*/
 }
 
 /*Mobile Layout: 320px*/
@@ -104,9 +145,8 @@
     .sticky-area-mobile-view {
         display: block;
     }
+
     /*mobile view menubar end*/
-
-
     /*front page start*/
     .navigation-menu {
         display: none;
@@ -120,9 +160,11 @@
         font-size: 35px;
         padding-bottom: 0;
     }
+
     .search-area {
         margin-top: 15px;
     }
+
     .burger {
         display: none;
     }
@@ -187,7 +229,10 @@
         font-style: italic;
     }
 
-    .takeaways-list ul li:nth-child(2n-1) {background: #ddd;border-radius: 5px;}
+    .takeaways-list ul li:nth-child(2n-1) {
+        background: #ddd;
+        border-radius: 5px;
+    }
 
     .takeaways-list ul li {
         padding: 7px 0;
@@ -196,9 +241,11 @@
     footer.footer-section {
         text-align: center;
     }
-    .footer-widget-title.section-title h1{
+
+    .footer-widget-title.section-title h1 {
         font-size: 30px;
     }
+
     .subscribe-form button {
         width: 30%;
     }
@@ -206,6 +253,7 @@
     footer.footer-section {
         margin-bottom: 65px;
     }
+
     .footer-bottom p {
         display: block;
         font-size: 18px;
@@ -222,20 +270,20 @@
     .footer-bottom a img {
         width: auto;
     }
+
     /*front page end*/
-
-
     /*login-registration page start*/
     .login-form-area .form-control {
         margin-bottom: 6px;
     }
-    /*login-registration page end*/
 
+    /*login-registration page end*/
     /*contact us page start*/
-    .contact-form, .form-wrapper{
+    .contact-form, .form-wrapper {
         box-shadow: initial;
         padding: initial;
     }
+
     .contact-information {
         display: block;
         width: 100%;
@@ -249,30 +297,105 @@
     .contact-information:after {
         position: initial;
     }
+
     /*contact us page end*/
+    /*search page start*/
+    .single-popular-item {
+        width: 100%;
+    }
+
+    .single-popular-item h6 {
+        font-size: 16px;
+    }
+
+    .search-ls {
+        display: none;
+    }
+
+    .section-title.search-result h1 {
+        font-family: 'Lato', sans-serif;
+        line-height: 35px;
+        font-size: 25px;
+    }
+
+    .section-title.search-result h1 span a {
+        display: none;
+    }
+
+    .open-restaurants {
+        padding: 2px;
+    }
+
+    .pre-order h2 {
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        line-height: 35px;
+    }
+
+    .t-l-area {
+        margin-right: initial;
+        float: initial;
+        display: block;
+    }
+
+    .sr-thumbnail {
+        width: auto;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .sr-logo {
+        right: 0;
+        top: 0;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, .1);
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+    }
+
+    /*search page end*/
+    /*search details page start*/
+    .cat-info ul li {
+        font-size: 16px;
+    }
+
+    .site-address p {
+        font-size: 16px;
+    }
+
+    .d-notice p {
+        font-size: 16px;
+    }
+
+    /*search details page end*/
 }
 
 /*Wide Mobile Layout: 480px*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     /*front page start*/
-    .hero-section{
+    .hero-section {
         height: 80vh;
     }
+
     .search-wrapper {
         text-align: center;
     }
+
     .search-area {
         float: initial;
         margin-top: 30px;
     }
+
     .search-input input {
         padding: 36px 0 36px 78px;
     }
+
     .search-input span {
         top: 25%;
     }
+
     .search-btn {
         height: 100%;
     }
+
     /*front page end*/
 }

@@ -953,3 +953,320 @@ button#contact-btn {
                                 CONTACT US PAGE END
 ************************************************************************************
 */
+
+/*
+************************************************************************************
+                                SEARCH PAGE START
+************************************************************************************
+*/
+/*popular section start*/
+.popular-restaurant.section-padding {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.single-popular-item {
+    width: 13%;
+    float: left;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px #999;
+}
+
+.popular-items h4 i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.popular-items h4 {
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.single-popular-item h6 {
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    padding: 0 10px;
+    transition: all .5s;
+}
+
+.single-popular-item h6 i {
+    display: none;
+    transition: all .5s;
+}
+
+.single-popular-item:hover h6 i {
+    display: inline-block;
+    color: var(--primary-color);
+    transition: all .5s;
+}
+
+/*popular section end*/
+
+/*search-result section start*/
+.section-title.search-result h1 {
+    font-size: 30px;
+}
+
+.section-title.search-result h1 span a {
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.restaurant-search .form-group {
+    position: relative;
+}
+
+.restaurant-search .form-group button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--primary-color);
+}
+
+.search-options ul li span {
+    float: right;
+}
+
+.search-options ul li {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.search-options ul li:hover {
+    color: var(--primary-color);
+}
+
+.search-options ul li a {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.open-restaurants {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.single-s-r {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+
+.sr-thumbnail {
+    width: 150px;
+    height: 80px;
+    position: relative;
+}
+
+.sr-thumbnail img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.sr-logo {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: -25px;
+    top: 8px;
+}
+
+.sr-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.t-l-area {
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+}
+
+.r-cont {
+    display: inline-block;
+}
+
+.r-cont h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.cat-info ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+.cat-info ul li:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 45%;
+    width: 5px;
+    height: 5px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.cat-info ul li:last-child:after {
+    position: initial;
+}
+
+.rating ul li {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.rating ul li.rated {
+    color: var(--primary-color);
+}
+
+.d-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.d-info p i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.d-info p span {
+    padding-left: 8px;
+    position: relative;
+}
+
+.d-info p span:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 45%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.open-restaurants.pre-order {
+    background: #EAEAEA;
+}
+
+.pre-order h2 {
+    font-family: "Dancing Script", cursive;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/*search-result section end*/
+/*
+************************************************************************************
+                                SEARCH PAGE END
+************************************************************************************
+*/
+
+/*
+************************************************************************************
+                                SEARCH DETAILS PAGE START
+************************************************************************************
+*/
+.s-breadcrumb ul li {
+    display: inline-block;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.s-breadcrumb ul li a {
+    color: var(--secondary-color);
+}
+
+.s-breadcrumb ul li span {
+    color: var(--primary-color);
+}
+
+.banner-section {
+    position: relative;
+}
+
+.site-thumbnail {
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.site-info {
+    width: 400px;
+    background: #fff;
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%, 15%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.site-logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.s-info {
+    display: inline-block;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.s-info h4 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.site-address p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.d-notice p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/*
+************************************************************************************
+                                SEARCH DETAILS PAGE END
+************************************************************************************
+*/
