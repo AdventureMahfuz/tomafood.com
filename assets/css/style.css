@@ -420,7 +420,7 @@ hero section style start
     padding: 35px 0 35px 75px;
     text-transform: uppercase;
     color: gray;
-    font-size: 18px;
+    font-size: 1.375em;
     border-radius: 15px;
     border: none;
 }
@@ -959,6 +959,56 @@ button#contact-btn {
                                 SEARCH PAGE START
 ************************************************************************************
 */
+/*search page mobile view start*/
+.mobile-view-search-panel {
+    margin-top: 20px;
+    display: none;
+}
+
+.mobile-view-search-panel input {
+    font-size: 1.0375em;
+    text-transform: capitalize;
+    padding: 20px 12px;
+}
+
+.mobile-view-search-panel button {
+    padding: 5px 10px;
+}
+
+.popular-items h4 span i {
+    float: right;
+    cursor: pointer;
+}
+
+.mvp.popular-items {
+    border: 1px solid #ddd;
+    padding: 0 8px;
+}
+
+.mvp.popular-items {
+    display: none;
+}
+
+.p-i-l ul li {
+    font-size: 1.2em;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.p-i-l ul li:nth-child(2n-1) {
+    background: #ddd;
+}
+
+.p-i-l {
+    box-shadow: 0 5px 5px #999;
+    position: relative;
+    top: 30px;
+    display: none;
+    transition: all .5s;
+}
+
+/*search page mobile view end*/
+
 /*popular section start*/
 .popular-restaurant.section-padding {
     margin-bottom: 0;
@@ -1064,6 +1114,13 @@ button#contact-btn {
     padding: 10px;
     margin-bottom: 20px;
     background: #ffffff;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+.single-s-r:hover {
+    transform: scale(1.05);
+    transition: all .5s;
 }
 
 .sr-thumbnail {
@@ -1084,6 +1141,13 @@ button#contact-btn {
     position: absolute;
     right: -25px;
     top: 8px;
+    transition: all .5s;
+}
+
+.single-s-r:hover .sr-logo {
+    right: 29%;
+    top: 60%;
+    transition: all .5s;
 }
 
 .sr-logo img {

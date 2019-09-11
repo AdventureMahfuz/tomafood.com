@@ -1,0 +1,66 @@
+/*mobile view menubar start*/
+.sticky-area-mobile-view {
+    display: block;
+}
+
+/*mobile view menubar end*/
+/*front page start*/
+.navigation-menu {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.single-buy-step {
+    display: block;
+}
+
+.single-buy-step img {
+    width: auto;
+}
+
+.subscribe-form button {
+    width: 30%;
+}
+
+.footer-bottom p {
+    display: block;
+}
+
+.footer-bottom a {
+    display: block;
+    float: initial;
+}
+
+.footer-bottom a img {
+    width: auto;
+}
+
+/*front page end*/
+/*contact us page start*/
+.contact-information {
+    display: block;
+    width: 100%;
+}
+
+/*contact us page end*/
+/*search page start*/
+.single-popular-item {
+    width: 100%;
+}
+
+.search-ls {
+    display: none;
+}
+
+.section-title.search-result h1 span a {
+    display: none;
+}
+
+.t-l-area {
+    display: block;
+}
+
+/*search page end*/
