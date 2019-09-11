@@ -62,5 +62,13 @@
 .t-l-area {
     display: block;
 }
-
+.mobile-view-search-panel {
+    display: block;
+}
+.mvp.popular-items {
+    display: block;
+}
+.popular-items{
+    display: none;
+}
 /*search page end*/

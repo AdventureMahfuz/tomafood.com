@@ -964,7 +964,6 @@ button#contact-btn {
     margin-top: 20px;
     display: none;
 }
-
 .mobile-view-search-panel input {
     font-size: 1.0375em;
     text-transform: capitalize;
@@ -1146,7 +1145,7 @@ button#contact-btn {
 
 .single-s-r:hover .sr-logo {
     right: 29%;
-    top: 60%;
+    top: -15%;
     transition: all .5s;
 }
 
@@ -1247,7 +1246,9 @@ button#contact-btn {
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-
+.restaurant-search input {
+    text-transform: capitalize;
+}
 /*search-result section end*/
 /*
 ************************************************************************************

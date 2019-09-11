@@ -131,11 +131,19 @@
     .section-title.search-result h1 {
         font-size: 25px;
     }
-
+    .restaurant-search input {
+        font-size: 0.875em;
+        padding: 5px;
+    }
     .pre-order h2 {
         font-size: 25px;
     }
-
+    .single-s-r:hover .sr-logo {
+        right: 45%;
+        top: 75%;
+        transition: all .5s;
+        border-radius: 10px;
+    }
     /*search page end*/
 }
 
@@ -170,7 +178,7 @@
     }
 
     .search-input input {
-        font-size: 16px;
+        font-size: 1em;
         padding: 25px 0 25px 50px;
     }
 
@@ -366,6 +374,19 @@
         font-size: 16px;
     }
 
+
+    .mobile-view-search-panel {
+        display: block;
+    }
+    .mvp.popular-items {
+        display: block;
+    }
+    .popular-items{
+        display: none;
+    }
+    section.search-result-section.section-padding {
+        padding: 0;
+    }
     /*search details page end*/
 }
 
