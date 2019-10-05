@@ -324,6 +324,53 @@ ul#nav li {
     padding-top: 7px;
 }
 
+/*sub menu start*/
+ul#nav li.sub-item {
+    position: relative;
+}
+
+ul#nav li ul {
+    position: absolute;
+    width: 250px;
+    height: 0;
+    right: 0;
+    background: var(--primary-color);
+    top: 100%;
+    text-align: left;
+    box-shadow: 0 5px 5px #ddd;
+    overflow: hidden;
+    z-index: 10;
+    transition: all .5s;
+}
+
+ul#nav li ul li {
+    display: block;
+}
+
+ul#nav li ul li a {
+    border-bottom: 1px solid #fff;
+}
+
+ul#nav li.active ul li a {
+    border-radius: initial;
+}
+
+ul#nav li ul li:last-child a {
+    border: none;
+}
+
+ul#nav li ul li a:hover {
+    color: #333;
+    border-radius: initial;
+}
+
+ul#nav li.sub-item:hover ul {
+    height: 130px;
+    overflow-y: scroll;
+    transition: all .5s;
+}
+
+/*sub menu end*/
 ul#nav li a {
     color: #fff;
     text-transform: uppercase;
@@ -508,6 +555,88 @@ info section style end
 
 /**
 ================================================================================
+download section style start
+================================================================================
+*/
+.app-thumb {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 120px 0;
+    z-index: 1;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.app-thumb:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    opacity: .6;
+}
+
+.download-links {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.download-links img {
+    width: initial;
+    margin: 10px;
+}
+
+.links-by-phn form .form-group {
+    margin: 0;
+    position: relative;
+}
+
+.links-by-phn form .form-group label {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.links-by-phn form .form-group input {
+    background: initial;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.links-by-phn form .form-group input[placeholder] {
+    text-transform: capitalize;
+}
+
+.links-by-phn form .form-group button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 7px 10px;
+    background: initial;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    border-left: 1px solid #fff;
+}
+
+/**
+================================================================================
+download section style end
+================================================================================
+*/
+
+/**
+================================================================================
 takeaway list section style start
 ================================================================================
 */
@@ -541,6 +670,65 @@ takeaway list section style start
 /**
 ================================================================================
 takeaway list section style end
+================================================================================
+*/
+
+/**
+================================================================================
+become partner section style start
+================================================================================
+*/
+.become-partner-section {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.become-partner-section.section-padding {
+    margin-bottom: 0;
+}
+
+.partner-cont h2 {
+    color: var(--primary-color);
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.partner-cont p {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.partner-btn {
+    margin-top: 35px;
+}
+
+.partner-btn a {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .5s;
+}
+
+.partner-btn a:hover {
+    box-shadow: 0 0 5px #999;
+    transition: all .5s;
+}
+
+.partner-btn a:hover i {
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+/**
+================================================================================
+become partner section style end
 ================================================================================
 */
 
@@ -964,6 +1152,7 @@ button#contact-btn {
     margin-top: 20px;
     display: none;
 }
+
 .mobile-view-search-panel input {
     font-size: 1.0375em;
     text-transform: capitalize;
@@ -995,7 +1184,7 @@ button#contact-btn {
 }
 
 .p-i-l ul li:nth-child(2n-1) {
-    background: #ddd;
+    background: #FFFFCC;
 }
 
 .p-i-l {
@@ -1246,9 +1435,11 @@ button#contact-btn {
     text-transform: capitalize;
     letter-spacing: 1px;
 }
+
 .restaurant-search input {
     text-transform: capitalize;
 }
+
 /*search-result section end*/
 /*
 ************************************************************************************
@@ -1261,6 +1452,10 @@ button#contact-btn {
                                 SEARCH DETAILS PAGE START
 ************************************************************************************
 */
+section.breadcrumb-section {
+    border-bottom: 1px solid #ddd;
+}
+
 .s-breadcrumb ul li {
     display: inline-block;
     padding: 10px 5px;
@@ -1333,5 +1528,133 @@ button#contact-btn {
 /*
 ************************************************************************************
                                 SEARCH DETAILS PAGE END
+************************************************************************************
+*/
+
+/*
+************************************************************************************
+                                BECOME PARTNER PAGE START
+************************************************************************************
+*/
+.partner-sign-up-form h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.partner-sign-up-form {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    overflow: hidden;
+    background: #FFFFCC;
+    box-shadow: 0 0 10px #999;
+}
+
+.partner-sign-up-form .form-group {
+    position: relative;
+}
+
+.partner-sign-up-form .form-group i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 41px;
+    height: 41.5px;
+    text-align: center;
+    line-height: 41px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.partner-sign-up-form .form-control {
+    padding: 20px 10px;
+    border-radius: inherit;
+    border: 1px solid var(--primary-color);
+}
+
+.partner-sign-up-form .form-control[placeholder] {
+    text-transform: capitalize;
+}
+
+.partner-sign-up-form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    float: right;
+    box-shadow: 0 0 5px #999;
+}
+
+.section-excerpt h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.calculate-form-area label {
+    font-weight: 400;
+    text-transform: capitalize;
+    min-height: 56px;
+}
+
+.calculate-form-area label span {
+    font-style: italic;
+    font-size: .8em;
+}
+
+.calculate-form-area form {
+    background: #FFFFCC;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+}
+
+.calculate-form-area .form-group {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.calculate-form-area .form-group i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.calculate-form-area .form-control {
+    padding: 19px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: initial;
+}
+
+.calculate-form-area .form-control[placeholder] {
+    text-transform: capitalize;
+}
+
+.calculate-form-area button {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    position: relative;
+    top: 60px;
+    left: 25%;
+}
+
+/*
+************************************************************************************
+                                BECOME PARTNER PAGE END
 ************************************************************************************
 */

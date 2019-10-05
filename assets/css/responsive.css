@@ -32,7 +32,16 @@
     body {
         font-size: 14px;
     }
+    ul#nav li a {
+        padding: 3px 15px;
+    }
+    .partner-cont h2 {
+        font-size: 40px;
+    }
 
+    .partner-cont p {
+        font-size: 25px;
+    }
     .search-title h1 {
         font-size: 50px;
     }
@@ -145,6 +154,25 @@
         border-radius: 10px;
     }
     /*search page end*/
+
+    /*become partner page start*/
+    .savings-area {
+        margin-top: 35px;
+    }
+
+    .calculate-form-area button {
+        top: 10px;
+        left: 83%;
+    }
+
+    .calculate-form-area label {
+        min-height: initial;
+    }
+
+    .calculate-form-area .form-group {
+        margin-top: 15px;
+    }
+    /*become partner page end*/
 }
 
 /*Mobile Layout: 320px*/
@@ -226,7 +254,9 @@
     .single-buy-step img {
         width: auto;
     }
-
+    .links-by-phn {
+        padding: 15px;
+    }
     .takeaways-list ul li {
     }
 
@@ -245,7 +275,17 @@
     .takeaways-list ul li {
         padding: 7px 0;
     }
+    .partner-cont h2 {
+        font-size: 35px;
+    }
 
+    .partner-cont p {
+        font-size: 20px;
+    }
+
+    .partner-btn a {
+        font-weight: 400;
+    }
     footer.footer-section {
         text-align: center;
     }
@@ -388,6 +428,25 @@
         padding: 0;
     }
     /*search details page end*/
+
+    /*become partner page start*/
+    .savings-area {
+        margin-top: 35px;
+    }
+
+    .calculate-form-area button {
+        top: 10px;
+        left: initial;
+    }
+
+    .calculate-form-area label {
+        min-height: initial;
+    }
+
+    .calculate-form-area .form-group {
+        margin-top: 15px;
+    }
+    /*become partner page end*/
 }
 
 /*Wide Mobile Layout: 480px*/
